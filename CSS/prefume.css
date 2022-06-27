@@ -1,0 +1,211 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&display=swap');
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+:root{
+    --Dark-cyan: hsl(158, 36%, 37%);
+    --Cream: hsl(30, 38%, 92%);
+    --Very-dark-blue: hsl(212, 21%, 14%);
+    --Dark-grayish-blue: hsl(228, 12%, 48%);
+    --White: hsl(0, 0%, 100%);
+}
+body{
+      background: var(--Cream);
+      font-family: 'Montserrat', sans-serif;
+      font-size: 14px;
+}
+.box{
+    position: absolute;
+    display: flex;
+    width: 38%;
+    left: 20%;
+    top: 20%;
+    box-shadow: 3px 3px 15px var(--Cream);
+}
+.container .perfume{
+    background: url(../images/image-product-desktop.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    width: 250px;
+    height: 350px;
+    position: absolute;
+    right: 100px;
+}
+.contain{
+    position: absolute;
+    width: 250px;
+    height: 350px;
+    left: 80%;
+    background: var(--White);
+    padding: 5%;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+.contain h3{
+    margin-top: 2%;
+    opacity: 50%;
+    font-size: 11px;
+
+}
+.contain h2{
+    margin-top: 5%;
+    width: 100%;
+    font-size: 23px;
+    font-weight: 700;
+    font-family: 'Fraunces', serif;
+}
+.contain .para{
+    margin-top: 10%;
+    font-weight: 500;
+    opacity: 65%;
+    font-size: 12px;
+}
+.prices{
+    display: flex;
+    margin-top: 10%;
+    gap: 5%;
+    box-shadow: 0px 0px 0px var(--Cream);
+    border-radius: 5px;
+}
+.promo{
+    margin-left: 3%;
+    font-size: 25px;
+    color: var(--Dark-cyan);
+    font-family: 'Fraunces', serif;
+    font-weight: 700;
+}
+.slash{
+    margin-top: 5%;
+    font-size: 14px;
+    text-decoration: line-through;
+    opacity: 70%;
+    font-family: 'Fraunces', serif;
+    font-weight: 500;
+}
+.proceed{
+    display: flex;
+    gap: 5%;
+    background: var(--Dark-cyan);
+    padding: 5%;
+    border-radius: 5px;
+    margin-top: 10%;
+    justify-content: center;
+}
+.proceed:hover{
+    cursor: pointer;
+    background: hsl(158, 93%, 11%);
+}
+.cart{
+    margin-top: 3%;
+    width: 7%;
+    height: 5%;
+}
+.proceed p{
+    color: var(--White);
+    font-size: 20px;
+    font-weight: 500;
+}
+@media(max-width:1024px){
+    .box{
+        width: 65%;
+        top: 5%;
+        left: -5%;
+    }
+    .contain h2{
+        margin-top: 2%;
+        font-size: 27px;
+    }
+    .contain h3{
+        margin-top: 5%;
+    }
+    .para{
+        font-size: 15px;
+        margin-top: 3%;
+    }
+    .prices{
+        margin-top: 3%;
+    }
+    .proceed{
+        margin-top: 3%;
+    }
+}
+@media(max-width:768px){
+    .box{
+        width: 70%;
+        top: 5%;
+        left: -8%;
+    }
+    .para{
+        margin-top: 3%;
+    }
+}
+@media(max-width:500px){
+     .box{
+        padding: 5%;
+        width: 79%;
+        top: 5%;
+        left: 10%;
+     }
+    .container .perfume{
+        background: url(../images/image-product-mobile.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 304px;
+        height: 300px;
+        top: 5px;
+        left: 10%;
+        border-top-right-radius: 10px;
+        border-bottom-left-radius: 0px;
+
+     }
+     .contain{
+        top: 306px;
+        left: 10%;
+        width: 304px;
+        height: 300px;
+        border-top-right-radius: 0px;
+        border-bottom-left-radius: 10px;
+     }
+     .proceed{
+        padding: 2%;
+     }
+     .proceed p{
+        margin-top: 2%;
+     }
+}
+@media(max-width:365px){
+    .box{
+        width: 100%;
+        left: 0;
+        right: 10%;
+    }
+    .container .perfume{
+        width: 90%;
+        left: 20px;
+    }
+    .contain{
+        left: 20px;
+        width: 90%;
+    }
+}
+@media(max-width:250px){
+    .box{
+        width: 100%;
+        left: -15px;
+    }
+    .container .perfume{
+        width: 225px;
+        height: 190px;
+    }
+    .contain{
+    top: 196px;
+    }
+    .para{
+        margin-top: 2%;
+    }
+}
