@@ -22,7 +22,7 @@ body{
     display: flex;
     width: 38%;
     left: 20%;
-    top: 20%;
+    top: 30%;
     box-shadow: 3px 3px 15px var(--Cream);
 }
 .container .perfume{
@@ -113,7 +113,7 @@ body{
 @media(max-width:1024px){
     .box{
         width: 65%;
-        top: 5%;
+        top: 35%;
         left: -5%;
     }
     .contain h2{
@@ -137,7 +137,7 @@ body{
 @media(max-width:768px){
     .box{
         width: 70%;
-        top: 5%;
+        top: 35%;
         left: -8%;
     }
     .para{
@@ -146,7 +146,7 @@ body{
 }
 @media(max-width:500px){
      .box{
-        padding: 5%;
+        padding: 15%;
         width: 79%;
         top: 5%;
         left: 10%;
